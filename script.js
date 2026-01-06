@@ -6,7 +6,7 @@ function clearDisplay() {
   document.querySelector("#display").value = "";
 }
 
-function calaculate() {
+function calculate() {
   const display = document.querySelector("#display");
   try {
     display.value = eval(display.value);
