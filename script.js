@@ -6,6 +6,16 @@ function clearDisplay() {
   document.querySelector("#display").value = "";
 }
 
+function deleteDisplay() {
+  const display = document.querySelector("#display");
+  if (!display) return;
+  if (display.value === "Error") {
+    display.value = "";
+    return;
+  }
+  display.value = display.value.slice(0, -1);
+}
+
 function calculate() {
   const display = document.querySelector("#display");
   try {

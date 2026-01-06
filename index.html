@@ -10,23 +10,26 @@
     <div class="calculator">
       <input type="text" id="display" disabled />
       <div class="button">
+        <button class="btn clear" onclick="clearDisplay()">AC</button>
+        <button class="btn delete" onclick="deleteDisplay()">DeL</button>
+        <button class="btn operator" onclick="appValue('/')">/</button>
+        <button class="btn operator" onclick="appValue('%')">%</button>
         <button class="btn" onclick="appValue('7')">7</button>
         <button class="btn" onclick="appValue('8')">8</button>
         <button class="btn" onclick="appValue('9')">9</button>
-        <button class="btn operator" onclick="appValue('/')">/</button>
+        <button class="btn operator" onclick="appValue('*')">X</button>
         <button class="btn" onclick="appValue('4')">4</button>
         <button class="btn" onclick="appValue('5')">5</button>
         <button class="btn" onclick="appValue('6')">6</button>
-        <button class="btn operator" onclick="appValue('*')">X</button>
+        <button class="btn operator" onclick="appValue('-')">-</button>
         <button class="btn" onclick="appValue('1')">1</button>
         <button class="btn" onclick="appValue('2')">2</button>
         <button class="btn" onclick="appValue('3')">3</button>
-        <button class="btn operator" onclick="appValue('-')">-</button>
-        <button class="btn" onclick="appValue('0')">0</button>
-        <button class="btn" onclick="appValue('.')">.</button>
-        <button class="btn operator" onclick="calculate()">=</button>
         <button class="btn operator" onclick="appValue('+')">+</button>
-        <button class="btn clear" onclick="clearDisplay()">Reset</button>
+        <button class="btn" onclick="appValue('.')">.</button>
+        <button class="btn" onclick="appValue('0')">0</button>
+        <button class="btn" onclick="appValue('00')">00</button>
+        <button class="btn operator" onclick="calculate()">=</button>
       </div>
     </div>
     <script src="script.js"></script>
